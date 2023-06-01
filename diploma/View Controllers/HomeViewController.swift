@@ -1,19 +1,20 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  diploma
 //
-//  Created by Daria on 28.05.2023.
+//  Created by Daria on 31.05.2023.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
 
 }
-
