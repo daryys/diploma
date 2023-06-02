@@ -12,7 +12,7 @@
         <!--Авторизация-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-yW-TgM">
                                         <rect key="frame" x="0.0" y="133.5" width="374" height="30"/>
-                                        <color key="tintColor" name="AccentColor"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Еще нет аккаунта? Регистрация">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
@@ -63,7 +63,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naI-dn-fiV">
                                 <rect key="frame" x="20" y="832" width="374" height="30"/>
-                                <color key="tintColor" name="AccentColor"/>
+                                <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Вход для администратора">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
@@ -100,7 +100,7 @@
         <!--Регистрация-->
         <scene sceneID="lOM-zB-Cbc">
             <objects>
-                <viewController id="nkn-yE-Awf" customClass="RegisterViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="nkn-yE-Awf" customClass="RegisterViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="78w-yF-DcH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,7 +199,7 @@
         <!--Для администратора-->
         <scene sceneID="2yD-Tu-kpx">
             <objects>
-                <viewController id="jrE-Z8-39r" customClass="AdminLoginViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminLoginViewController" id="jrE-Z8-39r" customClass="AdminLoginViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gay-Vl-EQl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,10 +252,10 @@
             </objects>
             <point key="canvasLocation" x="2748" y="779"/>
         </scene>
-        <!--Авторизация-->
+        <!--Главная страница-->
         <scene sceneID="8o3-GY-YZe">
             <objects>
-                <viewController id="fZr-iO-u5l" customClass="HomeViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZr-iO-u5l" customClass="HomeViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2oX-ma-gYO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,22 +272,12 @@
                                     <action selector="loginButton" destination="fZr-iO-u5l" eventType="touchUpInside" id="NG9-9M-b9s"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Активные записи:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95K-0v-UOl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Главная:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95K-0v-UOl">
                                 <rect key="frame" x="20" y="156" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="urV-Bv-Hsl">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Записаться" image="calendar" catalog="system" id="8vh-Z3-cRW"/>
-                                    <tabBarItem title="Главная" image="house.fill" catalog="system" id="ii8-hX-ICX"/>
-                                    <tabBarItem title="Медкарта" image="person.crop.square.fill" catalog="system" id="mN2-08-Dzh"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vu4-Ra-ZvK"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
@@ -300,11 +290,121 @@
                             <constraint firstItem="95K-0v-UOl" firstAttribute="leading" secondItem="Vu4-Ra-ZvK" secondAttribute="leading" constant="20" id="vCE-ZF-MW7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Авторизация" id="OqZ-lq-fyY"/>
+                    <tabBarItem key="tabBarItem" title="Главная" image="house.fill" catalog="system" id="wm7-SM-o4p"/>
+                    <navigationItem key="navigationItem" title="Главная страница" id="OqZ-lq-fyY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79g-ft-kqU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2747.826086956522" y="-666.29464285714278"/>
+            <point key="canvasLocation" x="3709" y="-1388"/>
+        </scene>
+        <!--Главная страница-->
+        <scene sceneID="JeF-RO-e30">
+            <objects>
+                <viewController storyboardIdentifier="UserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wJ3-Y6-2oG" customClass="UserViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ef9-XG-UQH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIk-aP-N6g">
+                                <rect key="frame" x="60" y="104" width="294" height="32"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Записаться на прием" cornerStyle="capsule" buttonSize="medium">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.39156437179999998" green="0.63246245729999995" blue="0.9557360976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton" destination="wJ3-Y6-2oG" eventType="touchUpInside" id="vug-N2-jjp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Медкарта" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-u5-WZr">
+                                <rect key="frame" x="20" y="156" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V2P-1b-KN9"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HIk-aP-N6g" firstAttribute="leading" secondItem="V2P-1b-KN9" secondAttribute="leading" constant="60" id="1wu-O9-CuZ"/>
+                            <constraint firstItem="V2P-1b-KN9" firstAttribute="trailing" secondItem="l7y-u5-WZr" secondAttribute="trailing" constant="20" id="KFf-Fe-XHa"/>
+                            <constraint firstItem="V2P-1b-KN9" firstAttribute="trailing" secondItem="HIk-aP-N6g" secondAttribute="trailing" constant="60" id="WRz-Mt-1OP"/>
+                            <constraint firstItem="l7y-u5-WZr" firstAttribute="leading" secondItem="V2P-1b-KN9" secondAttribute="leading" constant="20" id="ZLz-aR-ozb"/>
+                            <constraint firstItem="HIk-aP-N6g" firstAttribute="top" secondItem="V2P-1b-KN9" secondAttribute="top" constant="60" id="fS9-8a-tkk"/>
+                            <constraint firstItem="l7y-u5-WZr" firstAttribute="top" secondItem="HIk-aP-N6g" secondAttribute="bottom" constant="20" id="wHF-9s-O6Q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Медкарта" image="person.crop.square.fill" catalog="system" id="fNc-7y-tA7"/>
+                    <navigationItem key="navigationItem" title="Главная страница" id="qgJ-NF-1g5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jt-sL-leZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3709" y="51"/>
+        </scene>
+        <!--Главная страница-->
+        <scene sceneID="s8G-mJ-w8B">
+            <objects>
+                <viewController storyboardIdentifier="DoctorsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofz-C1-TlL" customClass="DoctorsViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OkA-Ld-IoS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjf-PF-eiN">
+                                <rect key="frame" x="60" y="104" width="294" height="32"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Записаться на прием" cornerStyle="capsule" buttonSize="medium">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.39156437179999998" green="0.63246245729999995" blue="0.9557360976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton" destination="ofz-C1-TlL" eventType="touchUpInside" id="dPg-cH-Nbl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Записаться:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ix-MY-VGy">
+                                <rect key="frame" x="20" y="156" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BQq-LU-sAA"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ix-MY-VGy" firstAttribute="top" secondItem="Tjf-PF-eiN" secondAttribute="bottom" constant="20" id="99J-WB-hwc"/>
+                            <constraint firstItem="Tjf-PF-eiN" firstAttribute="top" secondItem="BQq-LU-sAA" secondAttribute="top" constant="60" id="9U2-OM-pNc"/>
+                            <constraint firstItem="BQq-LU-sAA" firstAttribute="trailing" secondItem="Tjf-PF-eiN" secondAttribute="trailing" constant="60" id="BOJ-yk-L0v"/>
+                            <constraint firstItem="Tjf-PF-eiN" firstAttribute="leading" secondItem="BQq-LU-sAA" secondAttribute="leading" constant="60" id="Hby-8N-4B8"/>
+                            <constraint firstItem="8Ix-MY-VGy" firstAttribute="leading" secondItem="BQq-LU-sAA" secondAttribute="leading" constant="20" id="J4S-KZ-H9n"/>
+                            <constraint firstItem="BQq-LU-sAA" firstAttribute="trailing" secondItem="8Ix-MY-VGy" secondAttribute="trailing" constant="20" id="dUe-P1-hxb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Записаться" image="calendar" catalog="system" id="U4c-FH-Qfq"/>
+                    <navigationItem key="navigationItem" title="Главная страница" id="Zqr-dD-Lao"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0s-2e-iLY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3709" y="-680"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="AMJ-D9-JNB">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vOn-Re-8K6" customClass="MainTabBarViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xSV-Ma-rIU">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fZr-iO-u5l" kind="relationship" relationship="viewControllers" id="Ope-qi-fpb"/>
+                        <segue destination="wJ3-Y6-2oG" kind="relationship" relationship="viewControllers" id="cKh-1S-ILK"/>
+                        <segue destination="ofz-C1-TlL" kind="relationship" relationship="viewControllers" id="dsI-Hy-rn3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YpL-mi-3X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2748" y="-680"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,6 +415,9 @@
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

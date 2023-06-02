@@ -1,19 +1,18 @@
 //
-//  AdminLoginViewController.swift
+//  AdmiListViewController.swift
 //  diploma
 //
-//  Created by Daria on 30.05.2023.
+//  Created by Daria on 02.06.2023.
 //
 
 import Foundation
 import UIKit
 
-class AdminLoginViewController: UIViewController {
+class AdminListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.navigationController!.navigationBar.topItem!.title = ""
         
     }
 
