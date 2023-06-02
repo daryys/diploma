@@ -272,7 +272,7 @@
                                     <action selector="loginButton" destination="fZr-iO-u5l" eventType="touchUpInside" id="NG9-9M-b9s"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Главная:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95K-0v-UOl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Активные записи:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95K-0v-UOl">
                                 <rect key="frame" x="20" y="156" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -297,43 +297,29 @@
             </objects>
             <point key="canvasLocation" x="3709" y="-1388"/>
         </scene>
-        <!--Главная страница-->
+        <!--Медкарта-->
         <scene sceneID="JeF-RO-e30">
             <objects>
-                <viewController storyboardIdentifier="UserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wJ3-Y6-2oG" customClass="UserViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wJ3-Y6-2oG" userLabel="Медкарта" customClass="UserViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ef9-XG-UQH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIk-aP-N6g">
-                                <rect key="frame" x="60" y="104" width="294" height="32"/>
-                                <color key="tintColor" name="AccentColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Записаться на прием" cornerStyle="capsule" buttonSize="medium">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                    <color key="baseBackgroundColor" red="0.39156437179999998" green="0.63246245729999995" blue="0.9557360976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="loginButton" destination="wJ3-Y6-2oG" eventType="touchUpInside" id="vug-N2-jjp"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Медкарта" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-u5-WZr">
-                                <rect key="frame" x="20" y="156" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nkt-s5-8tR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.39156437179999998" green="0.63246245729999995" blue="0.9557360976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Медкарта" id="k01-RS-TSN"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V2P-1b-KN9"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="HIk-aP-N6g" firstAttribute="leading" secondItem="V2P-1b-KN9" secondAttribute="leading" constant="60" id="1wu-O9-CuZ"/>
-                            <constraint firstItem="V2P-1b-KN9" firstAttribute="trailing" secondItem="l7y-u5-WZr" secondAttribute="trailing" constant="20" id="KFf-Fe-XHa"/>
-                            <constraint firstItem="V2P-1b-KN9" firstAttribute="trailing" secondItem="HIk-aP-N6g" secondAttribute="trailing" constant="60" id="WRz-Mt-1OP"/>
-                            <constraint firstItem="l7y-u5-WZr" firstAttribute="leading" secondItem="V2P-1b-KN9" secondAttribute="leading" constant="20" id="ZLz-aR-ozb"/>
-                            <constraint firstItem="HIk-aP-N6g" firstAttribute="top" secondItem="V2P-1b-KN9" secondAttribute="top" constant="60" id="fS9-8a-tkk"/>
-                            <constraint firstItem="l7y-u5-WZr" firstAttribute="top" secondItem="HIk-aP-N6g" secondAttribute="bottom" constant="20" id="wHF-9s-O6Q"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Медкарта" image="person.crop.square.fill" catalog="system" id="fNc-7y-tA7"/>
                     <navigationItem key="navigationItem" title="Главная страница" id="qgJ-NF-1g5"/>
@@ -342,10 +328,10 @@
             </objects>
             <point key="canvasLocation" x="3709" y="51"/>
         </scene>
-        <!--Главная страница-->
+        <!--Врачи-->
         <scene sceneID="s8G-mJ-w8B">
             <objects>
-                <viewController storyboardIdentifier="DoctorsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofz-C1-TlL" customClass="DoctorsViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoctorsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofz-C1-TlL" userLabel="Врачи" customClass="DoctorsViewController" customModule="diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OkA-Ld-IoS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,6 +381,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xSV-Ma-rIU">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.39156437179999998" green="0.63246245729999995" blue="0.9557360976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="fZr-iO-u5l" kind="relationship" relationship="viewControllers" id="Ope-qi-fpb"/>

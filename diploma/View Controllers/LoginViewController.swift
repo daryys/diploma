@@ -25,27 +25,26 @@ class LoginViewController: UIViewController {
     
     // Функция кнопки входа
     @IBAction func loginButton() {
-        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
-            
-            let alert = UIAlertController(title: "Ошибка авторизации", message: "Почта или пароль не заполнены.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Продолжить", style: .default, handler: nil))
-            self.present(alert, animated: true)
-            
-        } else if !isValidEmail(emailTextField.text!){
-            
-            let alert = UIAlertController(title: "Ошибка авторизации", message: "Почта введена неверно.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Продолжить", style: .default, handler: nil))
-            self.present(alert, animated: true)
-            
-        } else {
+//        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+//
+//            let alert = UIAlertController(title: "Ошибка авторизации", message: "Почта или пароль не заполнены.", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Продолжить", style: .default, handler: nil))
+//            self.present(alert, animated: true)
+//
+//        } else if !isValidEmail(emailTextField.text!){
+//
+//            let alert = UIAlertController(title: "Ошибка авторизации", message: "Почта введена неверно.", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Продолжить", style: .default, handler: nil))
+//            self.present(alert, animated: true)
+//
+//        } else {
             // Переход на главную страницу
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            let vc = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
         }
                 
-    }
+//    }
     
 }
-
