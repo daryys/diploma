@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4303BA9F2A2E807D00B5BE15 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303BA9E2A2E807D00B5BE15 /* UserModel.swift */; };
+		4303BAA12A2E80BC00B5BE15 /* DoctorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303BAA02A2E80BC00B5BE15 /* DoctorsModel.swift */; };
+		4303BAA32A2E82AC00B5BE15 /* TimetablesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303BAA22A2E82AC00B5BE15 /* TimetablesModel.swift */; };
 		435EEC8B2A2A07B40053C2FA /* DoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC8A2A2A07B40053C2FA /* DoctorsViewController.swift */; };
 		435EEC8D2A2A07CA0053C2FA /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC8C2A2A07CA0053C2FA /* AppointmentViewController.swift */; };
 		435EEC8F2A2A07E50053C2FA /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC8E2A2A07E50053C2FA /* UserViewController.swift */; };
 		435EEC912A2A080E0053C2FA /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC902A2A080E0053C2FA /* AdminViewController.swift */; };
-		435EEC932A2A09780053C2FA /* AdmiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC922A2A09780053C2FA /* AdmiListViewController.swift */; };
+		435EEC932A2A09780053C2FA /* AdminListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC922A2A09780053C2FA /* AdminListViewController.swift */; };
 		435EEC952A2A31640053C2FA /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EEC942A2A31640053C2FA /* MainTabBarViewController.swift */; };
 		439028C62A263ED400F84F36 /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439028C52A263ED400F84F36 /* AdminLoginViewController.swift */; };
 		439028C82A27B87700F84F36 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439028C72A27B87700F84F36 /* HomeViewController.swift */; };
@@ -26,14 +29,18 @@
 		43933BBD2A2357D60085381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43933BBC2A2357D60085381F /* Assets.xcassets */; };
 		43933BC02A2357D60085381F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43933BBE2A2357D60085381F /* LaunchScreen.storyboard */; };
 		43933BCE2A24D0F70085381F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43933BCD2A24D0F60085381F /* RegisterViewController.swift */; };
+		5004CC10B494777ED4A7F6F5 /* Pods_diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CA573ABCC073D40909B278 /* Pods_diploma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4303BA9E2A2E807D00B5BE15 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4303BAA02A2E80BC00B5BE15 /* DoctorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsModel.swift; sourceTree = "<group>"; };
+		4303BAA22A2E82AC00B5BE15 /* TimetablesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetablesModel.swift; sourceTree = "<group>"; };
 		435EEC8A2A2A07B40053C2FA /* DoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsViewController.swift; sourceTree = "<group>"; };
 		435EEC8C2A2A07CA0053C2FA /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 		435EEC8E2A2A07E50053C2FA /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		435EEC902A2A080E0053C2FA /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
-		435EEC922A2A09780053C2FA /* AdmiListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmiListViewController.swift; sourceTree = "<group>"; };
+		435EEC922A2A09780053C2FA /* AdminListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminListViewController.swift; sourceTree = "<group>"; };
 		435EEC942A2A31640053C2FA /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		439028C52A263ED400F84F36 /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
 		439028C72A27B87700F84F36 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		43933BBF2A2357D60085381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43933BC12A2357D60085381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43933BCD2A24D0F60085381F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		96C0C2DA096F8793EE700251 /* Pods-diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diploma.debug.xcconfig"; path = "Target Support Files/Pods-diploma/Pods-diploma.debug.xcconfig"; sourceTree = "<group>"; };
+		C08921CA036353696D564A50 /* Pods-diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diploma.release.xcconfig"; path = "Target Support Files/Pods-diploma/Pods-diploma.release.xcconfig"; sourceTree = "<group>"; };
+		E0CA573ABCC073D40909B278 /* Pods_diploma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diploma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 				439028D52A27E76300F84F36 /* FirebaseDatabaseSwift in Frameworks */,
 				439028D12A27E76300F84F36 /* FirebaseAuth in Frameworks */,
 				439028D32A27E76300F84F36 /* FirebaseDatabase in Frameworks */,
+				5004CC10B494777ED4A7F6F5 /* Pods_diploma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +79,8 @@
 			children = (
 				43933BB22A2357D60085381F /* diploma */,
 				43933BB12A2357D60085381F /* Products */,
+				B6075DD19BFD4B50B1363644 /* Pods */,
+				9ACBB8F68D5B07EC5E84DFD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +121,7 @@
 				435EEC8C2A2A07CA0053C2FA /* AppointmentViewController.swift */,
 				439028C52A263ED400F84F36 /* AdminLoginViewController.swift */,
 				435EEC902A2A080E0053C2FA /* AdminViewController.swift */,
-				435EEC922A2A09780053C2FA /* AdmiListViewController.swift */,
+				435EEC922A2A09780053C2FA /* AdminListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -116,6 +129,9 @@
 		43933BC82A24BF500085381F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4303BA9E2A2E807D00B5BE15 /* UserModel.swift */,
+				4303BAA02A2E80BC00B5BE15 /* DoctorsModel.swift */,
+				4303BAA22A2E82AC00B5BE15 /* TimetablesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +143,24 @@
 			path = System;
 			sourceTree = "<group>";
 		};
+		9ACBB8F68D5B07EC5E84DFD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA573ABCC073D40909B278 /* Pods_diploma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6075DD19BFD4B50B1363644 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C0C2DA096F8793EE700251 /* Pods-diploma.debug.xcconfig */,
+				C08921CA036353696D564A50 /* Pods-diploma.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43933BC42A2357D60085381F /* Build configuration list for PBXNativeTarget "diploma" */;
 			buildPhases = (
+				8EACCEE2F91C902219910260 /* [CP] Check Pods Manifest.lock */,
 				43933BAC2A2357D60085381F /* Sources */,
 				43933BAD2A2357D60085381F /* Frameworks */,
 				43933BAE2A2357D60085381F /* Resources */,
+				0654B19CE0F6A844F138B046 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,22 +238,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0654B19CE0F6A844F138B046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-diploma/Pods-diploma-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-diploma/Pods-diploma-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-diploma/Pods-diploma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EACCEE2F91C902219910260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-diploma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43933BAC2A2357D60085381F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435EEC932A2A09780053C2FA /* AdmiListViewController.swift in Sources */,
+				435EEC932A2A09780053C2FA /* AdminListViewController.swift in Sources */,
 				435EEC8D2A2A07CA0053C2FA /* AppointmentViewController.swift in Sources */,
 				435EEC8F2A2A07E50053C2FA /* UserViewController.swift in Sources */,
 				43933BB82A2357D60085381F /* LoginViewController.swift in Sources */,
 				43933BB42A2357D60085381F /* AppDelegate.swift in Sources */,
+				4303BA9F2A2E807D00B5BE15 /* UserModel.swift in Sources */,
 				439028C62A263ED400F84F36 /* AdminLoginViewController.swift in Sources */,
 				435EEC8B2A2A07B40053C2FA /* DoctorsViewController.swift in Sources */,
+				4303BAA32A2E82AC00B5BE15 /* TimetablesModel.swift in Sources */,
 				43933BB62A2357D60085381F /* SceneDelegate.swift in Sources */,
 				43933BCE2A24D0F70085381F /* RegisterViewController.swift in Sources */,
 				435EEC952A2A31640053C2FA /* MainTabBarViewController.swift in Sources */,
 				435EEC912A2A080E0053C2FA /* AdminViewController.swift in Sources */,
+				4303BAA12A2E80BC00B5BE15 /* DoctorsModel.swift in Sources */,
 				439028C82A27B87700F84F36 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +441,7 @@
 		};
 		43933BC52A2357D60085381F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C0C2DA096F8793EE700251 /* Pods-diploma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,6 +472,7 @@
 		};
 		43933BC62A2357D60085381F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C08921CA036353696D564A50 /* Pods-diploma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

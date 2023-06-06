@@ -1,5 +1,5 @@
 //
-//  AdmiListViewController.swift
+//  AdminListViewController.swift
 //  diploma
 //
 //  Created by Daria on 02.06.2023.
